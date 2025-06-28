@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -27,7 +28,9 @@ export default function Home() {
               life with quality craftsmanship and attention to detail.
             </p>
             <button className="bg-gray-800 text-gray-100 px-8 py-3 rounded-md font-semibold hover:bg-gray-600 transition">
-              Contact Now
+              <Link href="#contact" className="text-white">
+                Contact Now
+              </Link>
             </button>
           </div>
         </div>
@@ -214,9 +217,12 @@ export default function Home() {
             Contact us today for a free consultation and let&apos;s bring your
             renovation dreams to life.
           </p>
-          <button className="bg-gray-900 text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition mr-4">
-            Get Free Quote
-          </button>
+          <Link
+            href="#contact"
+            className="bg-gray-900 text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition mr-4 inline-block"
+          >
+            Contact
+          </Link>
           <button className="border border-gray-900 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-gray-900 hover:text-white transition">
             View Portfolio
           </button>
@@ -281,7 +287,7 @@ export default function Home() {
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full bg-gray-900 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition"
+                  className="w-full bg-gray-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-600 transition"
                 >
                   Send Message
                 </button>
@@ -292,7 +298,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white">
+      <footer className="bg-gray-800 text-white">
         <div className="container mx-auto px-6 py-12 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}

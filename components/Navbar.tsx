@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-extrabold text-gray-800">
-              Renovation
+              DREAM HOME
             </Link>
           </div>
 
