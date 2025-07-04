@@ -1,11 +1,9 @@
-import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
       {/* Hero Section */}
       <section
         id="hero"
@@ -224,7 +222,7 @@ export default function Home() {
             Contact
           </Link>
           <button className="border border-gray-900 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-gray-900 hover:text-white transition">
-            View Portfolio
+            <Link href="/portfolio">View Portfolio</Link>
           </button>
         </div>
       </section>
