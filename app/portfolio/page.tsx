@@ -188,7 +188,9 @@ const PortfolioPage = () => {
 
                     {/* Testimonial */}
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 mb-4">
-                      <p className="text-sm italic">"{project.testimonial}"</p>
+                      <p className="text-sm italic">
+                        &ldquo;{project.testimonial}&rdquo;
+                      </p>
                       <p className="text-xs mt-1 text-gray-300">
                         - {project.client}
                       </p>
