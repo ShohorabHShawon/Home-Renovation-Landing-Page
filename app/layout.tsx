@@ -1,7 +1,18 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+
+const nevera = localFont({
+  variable: '--font-nevera',
+  src: './fonts/Nevera-Regular.otf',
+});
+
+const bronil = localFont({
+  variable: '--font-bronil',
+  src: './fonts/Bronill.otf',
+});
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nevera.variable} ${bronil.variable} antialiased`}
       >
         <Navbar />
         {children}

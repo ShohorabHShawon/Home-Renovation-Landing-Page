@@ -54,8 +54,11 @@ const Navbar = () => {
         {/* Rest of the code remains the same */}
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-extrabold text-gray-800">
-              DREAM HOME
+            <Link
+              href="/"
+              className="text-3xl font-extrabold font-nevera text-gray-800"
+            >
+              HOME
             </Link>
           </div>
 
@@ -65,10 +68,10 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-gray-700 hover:text-blue-600 transition-colors font-medium relative
+                className={`text-gray-700 hover:text-gray-950 transition-colors font-medium relative
                                 ${
                                   activeSection === item.href.substring(1)
-                                    ? 'text-blue-600'
+                                    ? 'text-[#313131]'
                                     : ''
                                 }`}
                 onClick={(e) => {
@@ -82,7 +85,7 @@ const Navbar = () => {
               >
                 {item.label}
                 <span
-                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform transition-transform duration-300 ${
+                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#313131] transform transition-transform duration-300 ${
                     activeSection === item.href.substring(1)
                       ? 'scale-x-100'
                       : 'scale-x-0'
@@ -96,7 +99,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="text-gray-700 hover:text-gray-950 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -132,10 +135,10 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-semibold relative
+                  className={`block px-3 py-2 text-gray-700 hover:text-gray-950 transition-colors font-semibold relative
                                     ${
                                       activeSection === item.href.substring(1)
-                                        ? 'text-blue-600'
+                                        ? 'text-[#313131]'
                                         : ''
                                     }`}
                   onClick={(e) => {
