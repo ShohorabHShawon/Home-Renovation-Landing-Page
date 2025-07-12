@@ -1,5 +1,4 @@
-
-import Image from "next/image";
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -14,18 +13,18 @@ const Hero = () => {
           alt="Beautifully renovated modern interior"
           fill
           className="object-cover w-full h-full"
-          style={{ objectPosition: "center" }}
+          style={{ objectPosition: 'center' }}
           priority
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
       {/* Centered Content */}
       {/* --- Hero Headline (Moved to Top) --- */}
-      <div className="absolute top-30 left-0 w-full flex flex-col items-center justify-center text-center px-6 pt-8 z-20">
-        <span className="text-gray-800 font-medium tracking-widest mb-2">
+      <div className="absolute top-1/6 md:top-1/6 lg:top-1/6 xl:top-1/6 left-0 w-full flex flex-col items-center justify-center text-center px-6 pt-8 z-20">
+        <span className="text-gray-800 font-medium tracking-widest mb-2 text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
           DESIGN | BUILD | RENEW
         </span>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-bronil my-4 leading-tight text-white drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold font-bronil my-4 leading-tight text-white drop-shadow-lg">
           Spaces That Inspire.
         </h1>
         <p className="text-base md:text-base lg:text-lg text-gray-800 max-w-xl mb-8 font-sans drop-shadow px-2 md:px-0">
@@ -49,4 +48,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
