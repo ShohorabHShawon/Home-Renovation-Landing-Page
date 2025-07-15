@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏡 Home Renovation Landing Page
 
-## Getting Started
+![Home Renovation Cover](./public/cover.png)
 
-First, run the development server:
+Welcome to the Home Renovation landing page, built with [Next.js](https://nextjs.org)! This project provides a modern, responsive landing page template for home renovation businesses or services.
+
+## 🚀 Getting Started
+
+To run the project locally:
 
 ```bash
+npm install
 npm run dev
 # or
-yarn dev
+yarn install && yarn dev
 # or
-pnpm dev
+pnpm install && pnpm dev
 # or
-bun dev
+bun install && bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to view the landing page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/page.tsx` — Main landing page component.
+- `public/cover.jpg` — Cover image for the landing page.
+- `styles/` — Custom styles for the project.
+- `components/` — Reusable UI components.
 
-## Learn More
+## ✏️ Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Edit Content:** Update `app/page.tsx` to change text, images, or layout.
+- **Change Cover Image:** Replace `public/cover.jpg` with your own image for a personalized look.
+- **Styling:** Modify files in the `styles/` directory to adjust the appearance.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Learn More
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) — Learn about Next.js features and API.
+- [Vercel Deployment Guide](https://nextjs.org/docs/app/building-your-application/deploying) — Deploy your landing page with Vercel.
 
-## Deploy on Vercel
+## 🚢 Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy your landing page instantly with [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Feel free to contribute or customize this template for your own home renovation business!
